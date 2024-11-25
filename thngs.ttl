@@ -1,11 +1,15 @@
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix vann: <http://purl.org/vocab/vann/>.
-# @prefix tngs-test: <https://w3id.org/thngs/>.
-@prefix tngs-test: <https://jhercher.github.io/skohub-pages/tngs-test/>.
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tngs-test: <https://jhercher.github.io/skohub-pages/tngs-test/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 tngs-test:
     a skos:ConceptScheme;
+    dct:title "Johannes' Things Vocabulary"@en, "Johannes Hercher's Things Vocabulary"@de ;
+    dct:creator "Johannes Hercher"@de ;
+    dct:created "2024-11-25"^^xsd:date ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dct:description
     "A vocab of things at home and where they are located (usually)"@en;
     dct:title "Things at home"@en;

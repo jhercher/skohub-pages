@@ -1,9 +1,9 @@
 {
-  "id": "https://example.org/colour/blue",
+  "id": "https://example.org/colour/grassgreen",
   "type": "Concept",
   "prefLabel": {
-    "en": "blue",
-    "de": "Blau"
+    "en": "grass green",
+    "de": "Grasgrün"
   },
   "inScheme": [
     {

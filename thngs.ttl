@@ -1,0 +1,69 @@
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix tngs-test: <https://w3id.org/thngs/>.
+
+tngs-test:
+    a skos:ConceptScheme;
+    dct:description
+    "A vocab of things at home and where they are located (usually)"@en;
+    dct:title "Things at home"@en;
+    vann:preferredNamespaceUri tngs-test:;
+    skos:hasTopConcept
+        tngs-test:Basement, tngs-test:d22cf, tngs-test:Dachboden,
+        tngs-test:Wohnzimmer.
+tngs-test:0231c
+    a skos:Concept;
+    skos:broader tngs-test:Basement;
+    skos:inScheme tngs-test:;
+    skos:prefLabel "Fahrrad"@de.
+tngs-test:38a36
+    a skos:Concept;
+    skos:broader tngs-test:Wohnzimmer;
+    skos:inScheme tngs-test:;
+    skos:prefLabel "Couch"@de, "Couch"@en.
+tngs-test:48d65
+    a skos:Concept;
+    skos:broader tngs-test:Basement;
+    skos:inScheme tngs-test:;
+    skos:prefLabel "Ladder"@en, "Leiter"@de.
+tngs-test:70718
+    a skos:Concept;
+    skos:broader tngs-test:Basement;
+    skos:inScheme tngs-test:;
+    skos:prefLabel "Werkzeugkoffer"@de.
+tngs-test:83b68
+    a skos:Concept;
+    skos:broader tngs-test:d22cf;
+    skos:inScheme tngs-test:;
+    skos:prefLabel "Bed"@en, "Bett"@de.
+tngs-test:a9f9d
+    a skos:Concept;
+    skos:broader tngs-test:d22cf;
+    skos:definition
+        "A concept to collect all my thing in the cupboard, shirts, throusers etc."@en;
+    skos:inScheme tngs-test:;
+    skos:prefLabel "Kleiderschrank"@de.
+tngs-test:ba984
+    a skos:Concept;
+    skos:broader tngs-test:Wohnzimmer;
+    skos:hiddenLabel "Cocktailscorner"@en;
+    skos:inScheme tngs-test:;
+    skos:prefLabel "Wohnzimmerschrank"@de.
+tngs-test:Basement
+    a skos:Concept;
+    skos:narrower tngs-test:0231c, tngs-test:48d65, tngs-test:70718;
+    skos:prefLabel "Keller"@de;
+    skos:topConceptOf tngs-test: .
+tngs-test:d22cf
+    a skos:Concept;
+    skos:narrower tngs-test:83b68, tngs-test:a9f9d;
+    skos:prefLabel "Schlafzimmer"@de;
+    skos:topConceptOf tngs-test: .
+tngs-test:Dachboden
+a skos:Concept; skos:prefLabel "Dachboden"@de; skos:topConceptOf tngs-test: .
+tngs-test:Wohnzimmer
+    a skos:Concept;
+    skos:narrower tngs-test:38a36, tngs-test:ba984;
+    skos:prefLabel "Living Room"@en, "Wohnzimmer"@de;
+    skos:topConceptOf tngs-test: .

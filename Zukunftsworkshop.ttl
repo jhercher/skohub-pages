@@ -109,7 +109,7 @@ zw:denkmuster-brechen a skos:Concept ;
     skos:broader zw:weg-erreichen ;
     skos:inScheme zw:scheme ;
     skos:scopeNote "90-110 Tage für neues Denkmuster, altes Muster unmöglich machen"@de ;
-    skos:example "Diamant-Trainingsplatz von Thomas Tuchel"@de .
+    skos:note "Diamant-Trainingsplatz von Thomas Tuchel"@de .
 
 zw:swot-analyse a skos:Concept ;
     skos:prefLabel "SWOT-Analyse"@de ;
@@ -288,6 +288,7 @@ zw:kryokonservierung a skos:Concept ;
     skos:prefLabel "Kryokonservierung"@de, "Cryopreservation"@en ;
     skos:definition "Einfrieren und Auftauen von menschlichem Gewebe ohne Kristallbildung"@de ;
     skos:broader zw:organtechnologie ;
+    skos:example zw:xiaoxi-wei ;
     skos:inScheme zw:scheme ;
     skos:scopeNote "Entwickelt an Berkeley University"@de .
 
@@ -510,9 +511,17 @@ zw:rendite-25x a skos:Concept ;
     skos:prefLabel "25x Rendite"@de ;
     skos:definition "25-fache Wertsteigerung in 5 Jahren"@de ;
     skos:broader zw:rendite-beispiele ;
+    skos:related zw:organtechnologie ;
     skos:inScheme zw:scheme ;
     skos:example "Organtechnologie, Berkeley University"@de .
 
+zw:xiaoxi-wei a skos:Concept ;
+    skos:prefLabel "Xiaoxi Wei"@de ;
+    skos:definition "CEO, X-Therma, ehem. Studentin an University of Berkeley. Forscht an Einfrieren von Wasser ohne Kristallbildung, z. B. zur Konservierung von Organen"@de ;
+    skos:example zw:kryokonservierung ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:deep-tech ;
+    skos:scopeNote "China, USA"@de .
 zw:rendite-12x a skos:Concept ;
     skos:prefLabel "12x Rendite"@de ;
     skos:definition "12-fache Wertsteigerung in 6 Monaten"@de ;
@@ -547,7 +556,8 @@ zw:personen a skos:Concept ;
                   zw:frank-schifferdecker,
                   zw:tanja-boss,
                   zw:julia-may,
-                  zw:boris-thomas .
+                  zw:boris-thomas,
+                  zw:xiaoxi-wei .
 
 zw:sven-janszky a skos:Concept ;
     skos:prefLabel "Sven Gabor Janszky"@de ;
@@ -591,7 +601,7 @@ zw:liz-parrish a skos:Concept ;
 zw:carol-dweck a skos:Concept ;
     skos:prefLabel "Carol Dweck"@de ;
     skos:altLabel "Dr. Carol Dweck"@de ;
-    skos:definition "Psychologin an Stanford University, Forschung zu Mindsets"@de ;
+    skos:definition "Psychologin an Stanford University, Forschung zu Mindsets. Menschen mit 'Growth Mindset glauben daran dass sie ihre Intelligenz verbessern können, und dass wenn sie es nicht tun sie sich verschlechtert.'(Janszky min. "@de ;
     skos:broader zw:personen ;
     skos:inScheme zw:scheme ;
     skos:related zw:mindset, zw:growth-mindset, zw:fixed-mindset .
@@ -602,7 +612,7 @@ zw:thomas-tuchel a skos:Concept ;
     skos:broader zw:personen ;
     skos:inScheme zw:scheme ;
     skos:related zw:denkmuster-brechen ;
-    skos:scopeNote "Ehemals Mainz 05, Dortmund, entwickelte Diamant-Trainingsplatz"@de .
+    skos:scopeNote "Ehemals Mainz 05, Dortmund, entwickelte Diamant-Trainingsplatz zur Veränderung unterbewusster Denkmuster der Spieler immer an der Linie entlang zu spielen; hin zu parallel spielen"@de .
 
 zw:chris-martin a skos:Concept ;
     skos:prefLabel "Chris Martin"@de ;
@@ -610,7 +620,7 @@ zw:chris-martin a skos:Concept ;
     skos:broader zw:personen ;
     skos:inScheme zw:scheme ;
     skos:related zw:backcasting ;
-    skos:example "'In vier Jahren kennt uns die ganze Welt' (1998)"@de .
+    skos:example "'In vier Jahren kennt uns die ganze Welt' (1998). Beispiel von Self-Fulfiling Prophecy (Merton)"@de .
 
 zw:frank-schifferdecker a skos:Concept ;
     skos:prefLabel "Frank Schifferdecker"@de ;
@@ -885,3 +895,195 @@ zw:growth-mindset skos:closeMatch <http://dbpedia.org/resource/Growth_mindset> .
 zw:realitygap skos:closeMatch <http://dbpedia.org/resource/Paradigm_shift> .
 
 # =============================================================================
+# =============================================================================
+# ERGÄNZUNGEN: WEITERE PERSONEN
+# =============================================================================
+
+zw:eric-brown a skos:Concept ;
+    skos:prefLabel "Eric Brown"@de, "Eric Brown"@en ;
+    skos:definition "KI-Forscher und leitender Manager bei IBM, arbeitet an Watson und kognitiven Computersystemen"@de ;
+    skos:broader zw:personen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:ibm, zw:ki ;
+    skos:scopeNote "IBM"@de .
+
+zw:david-yang a skos:Concept ;
+    skos:prefLabel "David Yang"@de, "David Yang"@en ;
+    skos:definition "Gründer und CEO von ABBYY, Pionier der OCR- und Dokumentenerkennungstechnologie"@de ;
+    skos:broader zw:personen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:abbyy, zw:ki ;
+    skos:exactMatch <http://dbpedia.org/resource/David_Yang_(businessman)> ;
+    skos:scopeNote "Russland, USA"@de .
+
+zw:winfried-hensinger a skos:Concept ;
+    skos:prefLabel "Winfried Hensinger"@de, "Winfried Hensinger"@en ;
+    skos:definition "Professor für Quantentechnologie an der University of Sussex, Gründer und Chief Scientist bei Universal Quantum"@de ;
+    skos:broader zw:personen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:universal-quantum, zw:quantencomputer ;
+    skos:exactMatch <https://en.wikipedia.org/wiki/Winfried_Hensinger> ;
+    skos:scopeNote "UK, Brighton"@de .
+
+zw:eve-anderson a skos:Concept ;
+    skos:prefLabel "Eve Anderson"@de, "Eve Anderson"@en ;
+    skos:altLabel "Eve"@de ;
+    skos:definition "Ethics Lead bei Google, spezialisiert auf KI-Ethik und verantwortungsvolle KI-Entwicklung"@de ;
+    skos:broader zw:personen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:google, zw:ki ;
+    skos:scopeNote "Google, Mountain View"@de .
+
+zw:simon-kos a skos:Concept ;
+    skos:prefLabel "Simon Kos"@de, "Simon Kos"@en ;
+    skos:definition "Chief Medical Officer bei Microsoft, verantwortlich für Gesundheitstechnologie und medizinische KI-Anwendungen"@de ;
+    skos:broader zw:personen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:microsoft, zw:ki, zw:gesundheit ;
+    skos:scopeNote "Microsoft, Redmond"@de .
+
+# =============================================================================
+# ERGÄNZUNGEN: WEITERE ORGANISATIONEN
+# =============================================================================
+
+zw:ibm a skos:Concept ;
+    skos:prefLabel "IBM"@de, "IBM"@en ;
+    skos:altLabel "International Business Machines"@en ;
+    skos:definition "Multinationaler Technologiekonzern, Pionier in KI-Forschung mit Watson und Quantencomputing"@de ;
+    skos:broader zw:organisationen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:eric-brown, zw:ki, zw:quantencomputer ;
+    skos:exactMatch <http://dbpedia.org/resource/IBM> ;
+    skos:scopeNote "Armonk, New York, USA"@de .
+
+zw:abbyy a skos:Concept ;
+    skos:prefLabel "ABBYY"@de, "ABBYY"@en ;
+    skos:definition "Softwareunternehmen spezialisiert auf OCR, Dokumentenerfassung und linguistische Technologien"@de ;
+    skos:broader zw:organisationen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:david-yang, zw:ki ;
+    skos:exactMatch <http://dbpedia.org/resource/ABBYY> ;
+    skos:scopeNote "Milpitas, Kalifornien, USA; ursprünglich Russland"@de .
+
+zw:universal-quantum a skos:Concept ;
+    skos:prefLabel "Universal Quantum"@de, "Universal Quantum"@en ;
+    skos:definition "Quantencomputer-Startup, entwickelt skalierbare Quantencomputer-Technologie"@de ;
+    skos:broader zw:organisationen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:winfried-hensinger, zw:quantencomputer, zw:deep-tech ;
+    skos:scopeNote "Brighton, UK"@de .
+
+zw:google a skos:Concept ;
+    skos:prefLabel "Google"@de, "Google"@en ;
+    skos:altLabel "Alphabet Inc."@de ;
+    skos:definition "Technologiekonzern, führend in Suchmaschinen, KI-Forschung, Cloud Computing und autonomen Fahrzeugen"@de ;
+    skos:broader zw:organisationen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:eve-anderson, zw:ki ;
+    skos:exactMatch <http://dbpedia.org/resource/Google> ;
+    skos:scopeNote "Mountain View, Kalifornien, USA"@de .
+
+zw:microsoft a skos:Concept ;
+    skos:prefLabel "Microsoft"@de, "Microsoft"@en ;
+    skos:altLabel "Microsoft Corporation"@de ;
+    skos:definition "Multinationaler Technologiekonzern, führend in Software, Cloud Computing, KI und Gesundheitstechnologie"@de ;
+    skos:broader zw:organisationen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:simon-kos, zw:ki, zw:gesundheit ;
+    skos:exactMatch <http://dbpedia.org/resource/Microsoft> ;
+    skos:scopeNote "Redmond, Washington, USA"@de .
+
+zw:youcom a skos:Concept ;
+    skos:prefLabel "you.com"@de, "you.com"@en ;
+    skos:altLabel "You.com"@de ;
+    skos:definition "KI-gestützte Suchmaschine mit personalisierten Suchergebnissen und integrierten KI-Tools"@de ;
+    skos:broader zw:organisationen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:richard-socher, zw:ki ;
+    skos:scopeNote "Palo Alto, Kalifornien, USA"@de .
+
+# =============================================================================
+# AKTUALISIERUNGEN: BESTEHENDE KONZEPTE
+# =============================================================================
+
+# Update Richard Socher mit you.com Verbindung
+zw:richard-socher a skos:Concept ;
+    skos:prefLabel "Richard Socher"@de ;
+    skos:altLabel "Dr. Richard Socher"@de ;
+    skos:definition "KI-Experte, Ehrendoktor, Gründer und CEO von you.com, ehemals Chief Scientist bei Salesforce, Pionier in Natural Language Processing"@de ;
+    skos:broader zw:personen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:youcom, zw:ki-molekularbiologie ;
+    skos:exactMatch <http://dbpedia.org/resource/Richard_Socher> ;
+    skos:scopeNote "Lebt auf Ranch im Silicon Valley, Stanford PhD"@de .
+
+# Update Personen-Konzept mit neuen Personen
+zw:personen a skos:Concept ;
+    skos:prefLabel "Personen"@de, "People"@en ;
+    skos:definition "Relevante Persönlichkeiten aus dem Zukunftsworkshop"@de ;
+    skos:inScheme zw:scheme ;
+    skos:topConceptOf zw:scheme ;
+    skos:narrower zw:sven-janszky,
+                  zw:aravind,
+                  zw:richard-socher,
+                  zw:rachel-weissman,
+                  zw:liz-parrish,
+                  zw:carol-dweck,
+                  zw:thomas-tuchel,
+                  zw:chris-martin,
+                  zw:frank-schifferdecker,
+                  zw:tanja-boss,
+                  zw:julia-may,
+                  zw:boris-thomas,
+                  zw:xiaoxi-wei,
+                  zw:eric-brown,
+                  zw:david-yang,
+                  zw:winfried-hensinger,
+                  zw:eve-anderson,
+                  zw:simon-kos .
+
+# Update Organisationen-Konzept mit neuen Organisationen
+zw:organisationen a skos:Concept ;
+    skos:prefLabel "Organisationen"@de, "Organizations"@en ;
+    skos:altLabel "Unternehmen"@de, "Institutionen"@de ;
+    skos:definition "Relevante Organisationen und Unternehmen"@de ;
+    skos:inScheme zw:scheme ;
+    skos:topConceptOf zw:scheme ;
+    skos:narrower zw:beahead,
+                  zw:perplexity,
+                  zw:bgi,
+                  zw:human-longevity,
+                  zw:ponyai,
+                  zw:tesla,
+                  zw:fpz-gmbh,
+                  zw:ibm,
+                  zw:abbyy,
+                  zw:universal-quantum,
+                  zw:google,
+                  zw:microsoft,
+                  zw:youcom .
+
+# =============================================================================
+# WEITERE EXACTMATCH LINKS FÜR BESTEHENDE KONZEPTE
+# =============================================================================
+
+# Personen
+zw:chris-martin skos:exactMatch <http://dbpedia.org/resource/Chris_Martin> .
+zw:thomas-tuchel skos:exactMatch <http://dbpedia.org/resource/Thomas_Tuchel> .
+zw:carol-dweck skos:exactMatch <http://dbpedia.org/resource/Carol_Dweck> .
+
+# Organisationen
+zw:tesla skos:exactMatch <http://dbpedia.org/resource/Tesla,_Inc.> .
+zw:beahead skos:exactMatch <https://de.wikipedia.org/wiki/2b_AHEAD_ThinkTank> .
+
+# Technologien und Konzepte
+zw:bitcoin skos:exactMatch <http://dbpedia.org/resource/Bitcoin> .
+zw:humanoide-roboter skos:exactMatch <http://dbpedia.org/resource/Humanoid_robot> .
+zw:autonome-fahrzeuge skos:exactMatch <http://dbpedia.org/resource/Self-driving_car> .
+zw:genomanalyse skos:exactMatch <http://dbpedia.org/resource/Genome_analysis> .
+zw:mikrobiom skos:exactMatch <http://dbpedia.org/resource/Microbiome> .
+zw:telomere skos:exactMatch <http://dbpedia.org/resource/Telomere> .
+zw:quantencomputer skos:exactMatch <http://dbpedia.org/resource/Quantum_computing> .
+
+# Orte
+zw:silicon-valley skos:exactMatch <http://dbpedia.org/resource/Silicon_Valley> .

@@ -229,4 +229,657 @@ zw:mikrobiom a skos:Concept ;
 zw:intelligente-wcs a skos:Concept ;
     skos:prefLabel "Intelligente WCs"@de, "Smart Toilets"@en ;
     skos:definition "Toiletten mit QR-Code-Scan zur Analyse des Mikrobiom-Ist-Zustands"@de ;
-    skos:broader zw
+    skos:broader zw:mikrobiom ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Bereits verfügbar in China, Shenzhen"@de .
+
+zw:gentherapie a skos:Concept ;
+    skos:prefLabel "Gentherapie"@de, "Gene Therapy"@en ;
+    skos:definition "Therapeutische Veränderung von Genen zur Heilung oder Prävention von Krankheiten"@de ;
+    skos:broader zw:gesundheit ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:telomere ;
+    skos:scopeNote "Kosten 750.000 USD Volldosis, 375.000 USD halbe Dosis, hält 10-12 Jahre"@de ;
+    skos:example "Liz Parrish: Biologisches Alter von 60 auf 22 Jahre reduziert"@de .
+
+zw:telomere a skos:Concept ;
+    skos:prefLabel "Telomere"@de, "Telomeres"@en ;
+    skos:definition "Endstücke der Chromosomen, deren Länge das biologische Alter anzeigt"@de ;
+    skos:broader zw:gentherapie ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Verlängung durch Gentherapie möglich"@de .
+
+zw:precision-medicine a skos:Concept ;
+    skos:prefLabel "Precision Medicine"@de, "Precision Medicine"@en ;
+    skos:altLabel "Präzisionsmedizin"@de, "Personalisierte Medizin"@de ;
+    skos:definition "Medizinischer Ansatz basierend auf individuellen genetischen und biometrischen Daten"@de ;
+    skos:broader zw:gesundheit ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:full-body-scan, zw:early-detection ;
+    skos:scopeNote "8.000 USD Jahresabo beim Human Longevity Institute"@de .
+
+zw:full-body-scan a skos:Concept ;
+    skos:prefLabel "Full Body Scan"@de, "Full Body Scan"@en ;
+    skos:altLabel "Ganzkörper-Computertomographie"@de ;
+    skos:definition "90-minütige CT-Untersuchung des gesamten Körpers"@de ;
+    skos:broader zw:precision-medicine ;
+    skos:inScheme zw:scheme .
+
+zw:early-detection a skos:Concept ;
+    skos:prefLabel "Early Detection"@de, "Early Detection"@en ;
+    skos:altLabel "Früherkennung"@de ;
+    skos:definition "Erkennung von Krankheiten bis zu 5 Jahre vor Ausbruch"@de ;
+    skos:broader zw:precision-medicine ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Die meisten Krebsarten sind bei Früherkennung heilbar"@de .
+
+zw:organtechnologie a skos:Concept ;
+    skos:prefLabel "Organtechnologie"@de, "Organ Technology"@en ;
+    skos:altLabel "Tissue Engineering"@de ;
+    skos:definition "Technologie zur Herstellung und Konservierung von Ersatzorganen"@de ;
+    skos:broader zw:gesundheit ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:kryokonservierung ;
+    skos:scopeNote "Investment-Case: 25x Rendite in 5 Jahren"@de .
+
+zw:kryokonservierung a skos:Concept ;
+    skos:prefLabel "Kryokonservierung"@de, "Cryopreservation"@en ;
+    skos:definition "Einfrieren und Auftauen von menschlichem Gewebe ohne Kristallbildung"@de ;
+    skos:broader zw:organtechnologie ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Entwickelt an Berkeley University"@de .
+
+zw:3d-food-printing a skos:Concept ;
+    skos:prefLabel "3D-Food-Printing"@de, "3D Food Printing"@en ;
+    skos:altLabel "Personalisierte Nahrung"@de ;
+    skos:definition "3D-Druck von Nahrung angepasst an individuelles Mikrobiom"@de ;
+    skos:broader zw:gesundheit ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:mikrobiom ;
+    skos:scopeNote "Druckt Burger-Patties, Hash Browns, Cookies in 3 Minuten"@de ;
+    skos:example "Rachel Weissman, Tel Aviv, Börsengang nach 12 Monaten"@de .
+
+zw:lebenserwartung a skos:Concept ;
+    skos:prefLabel "Lebenserwartung"@de, "Life Expectancy"@en ;
+    skos:definition "Prognose der menschlichen Lebensspanne durch technologische Entwicklungen"@de ;
+    skos:broader zw:gesundheit ;
+    skos:inScheme zw:scheme ;
+    skos:narrower zw:lebenserwartung-80-100,
+                  zw:lebenserwartung-100-150 .
+
+zw:lebenserwartung-80-100 a skos:Concept ;
+    skos:prefLabel "Lebenserwartung 80-100 Jahre"@de ;
+    skos:definition "Steigerung durch bestehende Technologien in den nächsten 20 Jahren"@de ;
+    skos:broader zw:lebenserwartung ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Durch Precision Medicine, Early Detection, AI"@de .
+
+zw:lebenserwartung-100-150 a skos:Concept ;
+    skos:prefLabel "Lebenserwartung 100-150 Jahre"@de ;
+    skos:definition "Weitere Steigerung durch Stammzelltherapien, Gentherapien, Tissue Engineering"@de ;
+    skos:broader zw:lebenserwartung ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Prognose: 25-30 Jahre (schneller als die 100-200 Jahre die manche annehmen)"@de .
+
+# =============================================================================
+# TOP CONCEPT: KÜNSTLICHE INTELLIGENZ
+# =============================================================================
+
+zw:ki a skos:Concept ;
+    skos:prefLabel "Künstliche Intelligenz"@de, "Artificial Intelligence"@en ;
+    skos:altLabel "KI"@de, "AI"@en ;
+    skos:definition "Technologien und Systeme mit maschineller Intelligenz"@de ;
+    skos:inScheme zw:scheme ;
+    skos:topConceptOf zw:scheme ;
+    skos:narrower zw:ki-tools,
+                  zw:ai-agents,
+                  zw:humanoide-roboter,
+                  zw:autonome-fahrzeuge,
+                  zw:ki-molekularbiologie .
+
+zw:ki-tools a skos:Concept ;
+    skos:prefLabel "KI-Tools"@de, "AI Tools"@en ;
+    skos:altLabel "ChatGPT"@de ;
+    skos:definition "Einzelne KI-Anwendungen und Werkzeuge"@de ;
+    skos:broader zw:ki ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Übergangsphase, veraltet seit 2025"@de .
+
+zw:ai-agents a skos:Concept ;
+    skos:prefLabel "AI Agents"@de, "AI Agents"@en ;
+    skos:altLabel "KI-Agenten"@de ;
+    skos:definition "Spezialisierte KI-Systeme die in Teams zusammenarbeiten"@de ;
+    skos:broader zw:ki ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Wechsel von Tools zu Agents wurde 2018 für 2025 prognostiziert und traf ein"@de ;
+    skos:example "70.000+ Agents weltweit verfügbar"@de .
+
+zw:agent-team a skos:Concept ;
+    skos:prefLabel "Agent-Team"@de ;
+    skos:altLabel "KI-Team"@de ;
+    skos:definition "Zusammenarbeit mehrerer spezialisierter AI Agents"@de ;
+    skos:broader zw:ai-agents ;
+    skos:inScheme zw:scheme ;
+    skos:narrower zw:problem-analyzer-agent,
+                  zw:projektmanager-agent,
+                  zw:inspektor-agent .
+
+zw:problem-analyzer-agent a skos:Concept ;
+    skos:prefLabel "Problem-Analyzer-Agent"@de ;
+    skos:definition "Agent zur Zerlegung komplexer Probleme in Unter-Probleme"@de ;
+    skos:broader zw:agent-team ;
+    skos:inScheme zw:scheme .
+
+zw:projektmanager-agent a skos:Concept ;
+    skos:prefLabel "Projektmanager-Agent"@de ;
+    skos:definition "Agent zur Koordination und Delegation an Spezial-Agents"@de ;
+    skos:broader zw:agent-team ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Kennt alle 70.000+ verfügbaren Agents und deren Fähigkeiten"@de .
+
+zw:inspektor-agent a skos:Concept ;
+    skos:prefLabel "Inspektor-Agent"@de ;
+    skos:altLabel "Qualitätskontroll-Agent"@de ;
+    skos:definition "Agent zur Prüfung von Antworten und Einhaltung von Regeln"@de ;
+    skos:broader zw:agent-team ;
+    skos:inScheme zw:scheme .
+
+zw:humanoide-roboter a skos:Concept ;
+    skos:prefLabel "Humanoide Roboter"@de, "Humanoid Robots"@en ;
+    skos:definition "Menschenähnliche Roboter mit KI-Steuerung"@de ;
+    skos:broader zw:ki ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "80 Unternehmen weltweit, 60 in China, Start 2026, Preise 2.000-30.000 USD"@de ;
+    skos:example "Tesla Optimus, mehr Roboter als Menschen prognostiziert"@de .
+
+zw:autonome-fahrzeuge a skos:Concept ;
+    skos:prefLabel "Autonome Fahrzeuge"@de, "Autonomous Vehicles"@en ;
+    skos:altLabel "Robo-Taxis"@de, "Selbstfahrende Autos"@de ;
+    skos:definition "Fahrzeuge mit KI-Steuerung ohne menschlichen Fahrer"@de ;
+    skos:broader zw:ki ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:adaptive-produkte ;
+    skos:scopeNote "30 Städte weltweit, Luxemburg als erste in Europa"@de ;
+    skos:example "Pony.ai, 1 Mrd. USD Funding, Börsengang Hongkong"@de .
+
+zw:adaptive-produkte a skos:Concept ;
+    skos:prefLabel "Adaptive Produkte"@de, "Adaptive Products"@en ;
+    skos:definition "Produkte die sich automatisch an Nutzer und Situation anpassen"@de ;
+    skos:broader zw:autonome-fahrzeuge ;
+    skos:inScheme zw:scheme ;
+    skos:example "Auto verwandelt sich in Bett, Büro, Restaurant, Spielplatz"@de .
+
+zw:ki-molekularbiologie a skos:Concept ;
+    skos:prefLabel "KI in der Molekularbiologie"@de ;
+    skos:altLabel "Molecular AI"@en ;
+    skos:definition "Anwendung von KI zur Entwicklung neuer Proteine, Enzyme und Moleküle"@de ;
+    skos:broader zw:ki ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Prognose für die nächsten 5 Jahre"@de ;
+    dc:source "Richard Socher" .
+
+zw:ki-praxisbeispiel-fpz a skos:Concept ;
+    skos:prefLabel "KI-Praxisbeispiel FPZ"@de ;
+    skos:definition "Frank Schifferdecker, FPZ GmbH, 5x Neukundengewinnung in 7 Monaten"@de ;
+    skos:broader zw:ai-agents ;
+    skos:inScheme zw:scheme ;
+    skos:example "25 Mitarbeiter, Gesundheitsbranche, Rückenschmerz-Produkte"@de .
+
+# =============================================================================
+# TOP CONCEPT: INVESTMENT
+# =============================================================================
+
+zw:investment a skos:Concept ;
+    skos:prefLabel "Investment"@de, "Investment"@en ;
+    skos:altLabel "Investition"@de, "Kapitalanlage"@de ;
+    skos:definition "Finanzielle Beteiligungen an zukunftsorientierten Unternehmen"@de ;
+    skos:inScheme zw:scheme ;
+    skos:topConceptOf zw:scheme ;
+    skos:narrower zw:deep-tech,
+                  zw:ki-startups,
+                  zw:gesundheits-tech,
+                  zw:bitcoin,
+                  zw:tokenisierung .
+
+zw:deep-tech a skos:Concept ;
+    skos:prefLabel "Deep Tech"@de, "Deep Tech"@en ;
+    skos:definition "Technologieunternehmen mit wissenschaftlich fundierter Innovation"@de ;
+    skos:broader zw:investment ;
+    skos:inScheme zw:scheme ;
+    skos:example "100x Rendite bei Quantencomputer-Startup"@de .
+
+zw:ki-startups a skos:Concept ;
+    skos:prefLabel "KI-Startups"@de, "AI Startups"@en ;
+    skos:definition "Junge Unternehmen im Bereich Künstliche Intelligenz"@de ;
+    skos:broader zw:investment ;
+    skos:inScheme zw:scheme ;
+    skos:example "Perplexity: 36x Rendite in Monaten, 18 Mrd. USD Bewertung"@de .
+
+zw:gesundheits-tech a skos:Concept ;
+    skos:prefLabel "Gesundheitstechnologie"@de, "Health Technology"@en ;
+    skos:altLabel "HealthTech"@en, "MedTech"@en ;
+    skos:definition "Technologische Innovationen im Gesundheitsbereich"@de ;
+    skos:broader zw:investment ;
+    skos:inScheme zw:scheme ;
+    skos:example "Neurotechnologie: 12x Rendite in 6 Monaten; Organtechnologie: 25x in 5 Jahren"@de .
+
+zw:bitcoin a skos:Concept ;
+    skos:prefLabel "Bitcoin"@de, "Bitcoin"@en ;
+    skos:altLabel "BTC"@en ;
+    skos:definition "Dezentrale digitale Währung"@de ;
+    skos:broader zw:investment ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "9.968% Rendite seit März 2017"@de ;
+    skos:example "Boris Thomas: Bitcoin-Dinner 2017"@de .
+
+zw:tokenisierung a skos:Concept ;
+    skos:prefLabel "Tokenisierung"@de, "Tokenization"@en ;
+    skos:definition "Digitalisierung von Vermögenswerten in handelbare Tokens"@de ;
+    skos:broader zw:investment ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Ermöglicht Investments ab kleinen Beträgen, Zukunftstrend"@de .
+
+zw:rendite-beispiele a skos:Concept ;
+    skos:prefLabel "Rendite-Beispiele"@de ;
+    skos:definition "Dokumentierte Investmenterfolge aus dem Portfolio"@de ;
+    skos:broader zw:investment ;
+    skos:inScheme zw:scheme ;
+    skos:narrower zw:rendite-100x,
+                  zw:rendite-36x,
+                  zw:rendite-25x,
+                  zw:rendite-12x,
+                  zw:rendite-bitcoin .
+
+zw:rendite-100x a skos:Concept ;
+    skos:prefLabel "100x Rendite"@de ;
+    skos:definition "Verhundertfachung des Investments"@de ;
+    skos:broader zw:rendite-beispiele ;
+    skos:inScheme zw:scheme ;
+    skos:example "Quantencomputer-Startup"@de .
+
+zw:rendite-36x a skos:Concept ;
+    skos:prefLabel "36x Rendite"@de ;
+    skos:definition "36-fache Wertsteigerung in wenigen Monaten"@de ;
+    skos:broader zw:rendite-beispiele ;
+    skos:inScheme zw:scheme ;
+    skos:example "Perplexity, jetzt 18 Mrd. USD Bewertung"@de .
+
+zw:rendite-25x a skos:Concept ;
+    skos:prefLabel "25x Rendite"@de ;
+    skos:definition "25-fache Wertsteigerung in 5 Jahren"@de ;
+    skos:broader zw:rendite-beispiele ;
+    skos:inScheme zw:scheme ;
+    skos:example "Organtechnologie, Berkeley University"@de .
+
+zw:rendite-12x a skos:Concept ;
+    skos:prefLabel "12x Rendite"@de ;
+    skos:definition "12-fache Wertsteigerung in 6 Monaten"@de ;
+    skos:broader zw:rendite-beispiele ;
+    skos:inScheme zw:scheme ;
+    skos:example "Neurotechnologie, Hirnsensor"@de .
+
+zw:rendite-bitcoin a skos:Concept ;
+    skos:prefLabel "Bitcoin Rendite"@de ;
+    skos:definition "9.968% Wertsteigerung seit März 2017"@de ;
+    skos:broader zw:rendite-beispiele ;
+    skos:inScheme zw:scheme ;
+    skos:example "Boris Thomas, Bitcoin-Dinner"@de .
+
+# =============================================================================
+# TOP CONCEPT: PERSONEN
+# =============================================================================
+
+zw:personen a skos:Concept ;
+    skos:prefLabel "Personen"@de, "People"@en ;
+    skos:definition "Relevante Persönlichkeiten aus dem Zukunftsworkshop"@de ;
+    skos:inScheme zw:scheme ;
+    skos:topConceptOf zw:scheme ;
+    skos:narrower zw:sven-janszky,
+                  zw:aravind,
+                  zw:richard-socher,
+                  zw:rachel-weissman,
+                  zw:liz-parrish,
+                  zw:carol-dweck,
+                  zw:thomas-tuchel,
+                  zw:chris-martin,
+                  zw:frank-schifferdecker,
+                  zw:tanja-boss,
+                  zw:julia-may,
+                  zw:boris-thomas .
+
+zw:sven-janszky a skos:Concept ;
+    skos:prefLabel "Sven Gabor Janszky"@de ;
+    skos:definition "Gründer und Leiter von 2b:ahead, Zukunftsforscher"@de ;
+    skos:broader zw:personen ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "52 Jahre, ehemals ARD, 24 Jahre Erfahrung, 700-800 Interviews/Jahr"@de .
+
+zw:aravind a skos:Concept ;
+    skos:prefLabel "Aravind"@de ;
+    skos:definition "Gründer von Perplexity"@de ;
+    skos:broader zw:personen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:perplexity ;
+    skos:scopeNote "San Francisco"@de .
+
+zw:richard-socher a skos:Concept ;
+    skos:prefLabel "Richard Socher"@de ;
+    skos:altLabel "Dr. Richard Socher"@de ;
+    skos:definition "KI-Experte und Ehrendoktor, Silicon Valley"@de ;
+    skos:broader zw:personen ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Lebt auf Ranch im Silicon Valley"@de .
+
+zw:rachel-weissman a skos:Concept ;
+    skos:prefLabel "Rachel Weissman"@de ;
+    skos:definition "Gründerin 3D-Food-Printing Startup, Tel Aviv"@de ;
+    skos:broader zw:personen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:3d-food-printing ;
+    skos:scopeNote "Börsengang nach 12 Monaten"@de .
+
+zw:liz-parrish a skos:Concept ;
+    skos:prefLabel "Liz Parrish"@de ;
+    skos:definition "Genforscherin, testet Gentherapien am eigenen Körper"@de ;
+    skos:broader zw:personen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:gentherapie ;
+    skos:scopeNote "53 Jahre chronologisch, 22 Jahre biologisch"@de .
+
+zw:carol-dweck a skos:Concept ;
+    skos:prefLabel "Carol Dweck"@de ;
+    skos:altLabel "Dr. Carol Dweck"@de ;
+    skos:definition "Psychologin an Stanford University, Forschung zu Mindsets"@de ;
+    skos:broader zw:personen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:mindset, zw:growth-mindset, zw:fixed-mindset .
+
+zw:thomas-tuchel a skos:Concept ;
+    skos:prefLabel "Thomas Tuchel"@de ;
+    skos:definition "Fußballtrainer, England Nationalmannschaft"@de ;
+    skos:broader zw:personen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:denkmuster-brechen ;
+    skos:scopeNote "Ehemals Mainz 05, Dortmund, entwickelte Diamant-Trainingsplatz"@de .
+
+zw:chris-martin a skos:Concept ;
+    skos:prefLabel "Chris Martin"@de ;
+    skos:definition "Leadsänger von Coldplay"@de ;
+    skos:broader zw:personen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:backcasting ;
+    skos:example "'In vier Jahren kennt uns die ganze Welt' (1998)"@de .
+
+zw:frank-schifferdecker a skos:Concept ;
+    skos:prefLabel "Frank Schifferdecker"@de ;
+    skos:definition "Mittelständischer Unternehmer, FPZ GmbH Köln"@de ;
+    skos:broader zw:personen ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "25 Mitarbeiter, Gesundheitsbranche, 5x Neukundengewinnung in 7 Monaten"@de .
+
+zw:tanja-boss a skos:Concept ;
+    skos:prefLabel "Tanja Boss"@de ;
+    skos:definition "Selbstständige Unternehmerin"@de ;
+    skos:broader zw:personen ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "18 Jahre Unternehmen 'Tanja Boss inspiriert', 20% Umsatzsteigerung"@de .
+
+zw:julia-may a skos:Concept ;
+    skos:prefLabel "Julia May"@de ;
+    skos:definition "Apothekerin mit drei Kindern"@de ;
+    skos:broader zw:personen ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "2 Apotheken, Verdopplung einer Filiale, Startup-Gründung, medizinisches Cannabis"@de .
+
+zw:boris-thomas a skos:Concept ;
+    skos:prefLabel "Boris Thomas"@de ;
+    skos:definition "Früher Community-Mitglied und Bitcoin-Investor"@de ;
+    skos:broader zw:personen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:bitcoin ;
+    skos:scopeNote "Bitcoin-Dinner 2017, 9.968% Rendite"@de .
+
+# =============================================================================
+# TOP CONCEPT: ORGANISATIONEN
+# =============================================================================
+
+zw:organisationen a skos:Concept ;
+    skos:prefLabel "Organisationen"@de, "Organizations"@en ;
+    skos:altLabel "Unternehmen"@de, "Institutionen"@de ;
+    skos:definition "Relevante Organisationen und Unternehmen"@de ;
+    skos:inScheme zw:scheme ;
+    skos:topConceptOf zw:scheme ;
+    skos:narrower zw:beahead,
+                  zw:perplexity,
+                  zw:bgi,
+                  zw:human-longevity,
+                  zw:ponyai,
+                  zw:tesla,
+                  zw:fpz-gmbh .
+
+zw:beahead a skos:Concept ;
+    skos:prefLabel "2b:ahead"@de ;
+    skos:altLabel "be:ahead"@de ;
+    skos:definition "Größtes europäisches Zukunftsforschungsinstitut"@de ;
+    skos:broader zw:organisationen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:sven-janszky ;
+    skos:scopeNote "Leipzig, 24 Jahre alt, Doktorinnen und Doktoren der Zukunftsforschung"@de .
+
+zw:perplexity a skos:Concept ;
+    skos:prefLabel "Perplexity"@de, "Perplexity"@en ;
+    skos:definition "Schnell wachsendes KI-Startup"@de ;
+    skos:broader zw:organisationen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:aravind ;
+    skos:scopeNote "San Francisco, gegründet vor 3 Jahren, 18 Mrd. USD Bewertung, 36x Rendite"@de .
+
+zw:bgi a skos:Concept ;
+    skos:prefLabel "BGI"@de ;
+    skos:altLabel "Beijing Genomics Institute"@de ;
+    skos:definition "Größtes Genetik-Institut der Welt"@de ;
+    skos:broader zw:organisationen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:genomanalyse ;
+    skos:scopeNote "Shenzhen, China, beste Genetiker der Welt"@de .
+
+zw:human-longevity a skos:Concept ;
+    skos:prefLabel "Human Longevity Institute"@de ;
+    skos:definition "Institut für Langlebigkeitsforschung"@de ;
+    skos:broader zw:organisationen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:precision-medicine ;
+    skos:scopeNote "San Francisco, 8.000 USD Jahresabo"@de .
+
+zw:ponyai a skos:Concept ;
+    skos:prefLabel "Pony.ai"@de ;
+    skos:definition "Robo-Taxi Unternehmen"@de ;
+    skos:broader zw:organisationen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:autonome-fahrzeuge ;
+    skos:scopeNote "30 Städte weltweit, 1 Mrd. USD Funding, Börsengang Hongkong"@de .
+
+zw:tesla a skos:Concept ;
+    skos:prefLabel "Tesla"@de, "Tesla"@en ;
+    skos:definition "Elektroauto- und Roboter-Hersteller"@de ;
+    skos:broader zw:organisationen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:humanoide-roboter ;
+    skos:scopeNote "Optimus Roboter, 30.000 USD, Start 2026"@de .
+
+zw:fpz-gmbh a skos:Concept ;
+    skos:prefLabel "FPZ GmbH"@de ;
+    skos:definition "Gesundheitsunternehmen Rückenschmerz-Produkte"@de ;
+    skos:broader zw:organisationen ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:frank-schifferdecker ;
+    skos:scopeNote "Köln, 25 Mitarbeiter, 30 Jahre"@de .
+
+zw:future-me-membership a skos:Concept ;
+    skos:prefLabel "Future Me Membership"@de ;
+    skos:definition "Community und Coaching-Programm von Sven Gabor Janszky"@de ;
+    skos:broader zw:organisationen ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "99 EUR/Monat, 1 EUR erster Monat, 891 EUR Jahrespreis"@de ;
+    skos:narrower zw:live-future-talks,
+                  zw:zukunfts-stammtisch,
+                  zw:deep-dive-session,
+                  zw:community-day,
+                  zw:zukunftskongress .
+
+zw:live-future-talks a skos:Concept ;
+    skos:prefLabel "Live Future Talks"@de ;
+    skos:definition "Monatliche Live-Sessions mit Sven Gabor Janszky"@de ;
+    skos:broader zw:future-me-membership ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "12x pro Jahr"@de .
+
+zw:zukunfts-stammtisch a skos:Concept ;
+    skos:prefLabel "Zukunfts-Stammtisch"@de ;
+    skos:definition "Zweiwöchentliche Treffen mit Future Coaches"@de ;
+    skos:broader zw:future-me-membership ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "24x pro Jahr"@de .
+
+zw:deep-dive-session a skos:Concept ;
+    skos:prefLabel "Deep-Dive-Session"@de ;
+    skos:definition "Quartalsweise Expertensessions zu Spezialthemen"@de ;
+    skos:broader zw:future-me-membership ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "4x pro Jahr, Themen: Finanzen, Gesundheit, Karriere"@de .
+
+zw:community-day a skos:Concept ;
+    skos:prefLabel "Community Day"@de ;
+    skos:definition "Ganztägiges Live-Treffen der Community"@de ;
+    skos:broader zw:future-me-membership ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "2x pro Jahr, am Institut in Leipzig"@de .
+
+zw:zukunftskongress a skos:Concept ;
+    skos:prefLabel "Zukunftskongress"@de ;
+    skos:definition "Jährlicher Kongress mit internationalen Gästen"@de ;
+    skos:broader zw:future-me-membership ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "25. Jubiläum 2025, 6.-7. Juni Leipzig, 2000 Teilnehmer, 2 Tickets Bonus (358 EUR)"@de .
+
+# =============================================================================
+# WEITERE KONZEPTE
+# =============================================================================
+
+zw:interviews a skos:Concept ;
+    skos:prefLabel "Interviews mit Entscheidungsträgern"@de ;
+    skos:definition "Methode zur Prognose durch Interviews mit einflussreichen Personen"@de ;
+    skos:broader zw:methodik ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "700-800 Interviews pro Jahr mit Strategiechefs, Innovationschefs, Technologiechefs"@de .
+
+zw:prognose-2018 a skos:Concept ;
+    skos:prefLabel "Prognose 2018"@de ;
+    skos:altLabel "Kundendialog 2025 Studie"@de ;
+    skos:definition "Studie die 2018 KI-Agents für 2025 vorhersagte"@de ;
+    skos:broader zw:methodik ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Wechsel von KI-Tools zu AI Agents exakt eingetroffen"@de .
+
+zw:wachstum a skos:Concept ;
+    skos:prefLabel "Exponentielles Wachstum"@de ;
+    skos:definition "Schnelles technologisches und wirtschaftliches Wachstum"@de ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:rote-linie ;
+    skos:scopeNote "Noch nie so viel Wachstum wie heute - Frage ist nur: Bist du angeschlossen?"@de .
+
+zw:zukunft-lieben a skos:Concept ;
+    skos:prefLabel "Zukunft lieben lernen"@de ;
+    skos:definition "Haltung der Akzeptanz und Begeisterung für zukünftige Entwicklungen"@de ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:growth-mindset ;
+    skos:scopeNote "Zukunft kommt sowieso - Frage ist nur ob man sich damit beschäftigt"@de .
+
+zw:kinder-zukunft a skos:Concept ;
+    skos:prefLabel "Kinder und Zukunft"@de ;
+    skos:definition "Natürliches Zukunftsvertrauen von Kindern"@de ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Kinder schenken Möglichkeiten der Zukunft mehr Vertrauen als Erfahrungen der Vergangenheit"@de ;
+    skos:example "Samo (8 Jahre): 120-150 Jahre Lebenserwartung = völlig normal"@de .
+
+zw:erfahrung-vs-möglichkeit a skos:Concept ;
+    skos:prefLabel "Erfahrung vs. Möglichkeit"@de ;
+    skos:definition "Konflikt zwischen Vergangenheitserfahrung und Zukunftsmöglichkeiten"@de ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Zukunft entsteht aus neuen Möglichkeiten, nicht aus Erfahrungen"@de .
+
+zw:china-einfluss a skos:Concept ;
+    skos:prefLabel "Chinesischer Einfluss"@de ;
+    skos:definition "Führende Rolle Chinas in Technologieentwicklung"@de ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "60 von 80 Roboter-Firmen, BGI, günstigere Preise, Automobilmarkt"@de .
+
+zw:silicon-valley a skos:Concept ;
+    skos:prefLabel "Silicon Valley"@de, "Silicon Valley"@en ;
+    skos:definition "Technologie-Zentrum in Kalifornien"@de ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Zentrum für KI, Startups, Innovation"@de .
+
+zw:europa-krise a skos:Concept ;
+    skos:prefLabel "Europa Krise-Mentalität"@de ;
+    skos:definition "Pessimistische Grundhaltung in Europa"@de ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:blaue-linie ;
+    skos:scopeNote "Deutsche Zeitungen: kein Wachstum, Krise überall"@de .
+
+zw:politik-vs-technologie a skos:Concept ;
+    skos:prefLabel "Politik vs. Technologie"@de ;
+    skos:definition "Unterschied zwischen politischem und technologischem Einfluss auf Zukunft"@de ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Politik: 4-5 Jahre, Technologie: langfristig prägend"@de .
+
+zw:neurotechnologie a skos:Concept ;
+    skos:prefLabel "Neurotechnologie"@de, "Neurotechnology"@en ;
+    skos:definition "Technologie zur Messung und Beeinflussung von Hirnaktivität"@de ;
+    skos:broader zw:gesundheits-tech ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Sensor auf Stirn, misst Hirnströme, Vorhersage von Schlaganfällen, 12x Rendite in 6 Monaten"@de .
+
+zw:quantencomputer a skos:Concept ;
+    skos:prefLabel "Quantencomputer"@de, "Quantum Computer"@en ;
+    skos:definition "Computer basierend auf Quantenmechanik"@de ;
+    skos:broader zw:deep-tech ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "100x Rendite Investment-Beispiel"@de .
+
+zw:regulatorik a skos:Concept ;
+    skos:prefLabel "Regulatorik"@de, "Regulation"@en ;
+    skos:altLabel "Gesetzliche Regulierung"@de ;
+    skos:definition "Gesetzliche Rahmenbedingungen für neue Technologien"@de ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Gentherapie: USA/Europa nicht erlaubt, aber Mexiko, Schweiz, Dubai, Asien"@de .
+
+# =============================================================================
+# RELATIONSHIPS
+# =============================================================================
+
+# Weitere Related-Beziehungen
+zw:perplexity skos:related zw:ki-startups, zw:rendite-36x .
+zw:bgi skos:related zw:genomanalyse, zw:mikrobiom .
+zw:human-longevity skos:related zw:lebenserwartung, zw:precision-medicine .
+zw:ponyai skos:related zw:autonome-fahrzeuge, zw:china-einfluss .
+zw:tesla skos:related zw:humanoide-roboter, zw:silicon-valley .
+
+zw:sven-janszky skos:related zw:beahead, zw:tomorrowyourlife, zw:future-me-membership .
+zw:liz-parrish skos:related zw:gentherapie, zw:telomere, zw:lebenserwartung .
+zw:carol-dweck skos:related zw:mindset, zw:growth-mindset, zw:fixed-mindset .
+zw:thomas-tuchel skos:related zw:denkmuster-brechen, zw:weg-erreichen .
+
+zw:growth-mindset skos:related zw:rote-linie, zw:wachstum, zw:zukunft-lieben .
+zw:fixed-mindset skos:related zw:blaue-linie, zw:europa-krise .
+
+# Exact Match für internationale Äquivalente
+zw:backcasting skos:exactMatch <http://dbpedia.org/resource/Backcasting> .
+zw:ki skos:exactMatch <http://dbpedia.org/resource/Artificial_intelligence> .
+zw:genomanalyse skos:exactMatch <http://dbpedia.org/resource/Genome_analysis> .
+
+# Close Match für ähnliche Konzepte
+zw:growth-mindset skos:closeMatch <http://dbpedia.org/resource/Growth_mindset> .
+zw:realitygap skos:closeMatch <http://dbpedia.org/resource/Paradigm_shift> .
+
+# =============================================================================

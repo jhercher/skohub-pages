@@ -20,6 +20,34 @@
       "en": "Deep Tech"
     }
   },
+  "related": [
+    {
+      "id": "https://jhercher.github.io/skohub-pages/zw/ibm",
+      "prefLabel": {
+        "de": "IBM",
+        "en": "IBM"
+      }
+    },
+    {
+      "id": "https://jhercher.github.io/skohub-pages/zw/winfried-hensinger",
+      "prefLabel": {
+        "de": "Winfried Hensinger",
+        "en": "Winfried Hensinger"
+      }
+    },
+    {
+      "id": "https://jhercher.github.io/skohub-pages/zw/universal-quantum",
+      "prefLabel": {
+        "de": "Universal Quantum",
+        "en": "Universal Quantum"
+      }
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "http://dbpedia.org/resource/Quantum_computing"
+    }
+  ],
   "inScheme": [
     {
       "id": "https://jhercher.github.io/skohub-pages/zw/scheme"

@@ -36,6 +36,11 @@
       }
     }
   ],
+  "exactMatch": [
+    {
+      "id": "http://dbpedia.org/resource/Tesla,_Inc."
+    }
+  ],
   "inScheme": [
     {
       "id": "https://jhercher.github.io/skohub-pages/zw/scheme"

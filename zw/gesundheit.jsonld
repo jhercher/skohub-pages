@@ -59,6 +59,22 @@
       }
     }
   ],
+  "related": [
+    {
+      "id": "https://jhercher.github.io/skohub-pages/zw/simon-kos",
+      "prefLabel": {
+        "de": "Simon Kos",
+        "en": "Simon Kos"
+      }
+    },
+    {
+      "id": "https://jhercher.github.io/skohub-pages/zw/microsoft",
+      "prefLabel": {
+        "de": "Microsoft",
+        "en": "Microsoft"
+      }
+    }
+  ],
   "inScheme": [
     {
       "id": "https://jhercher.github.io/skohub-pages/zw/scheme"

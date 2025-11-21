@@ -57,6 +57,11 @@
       }
     }
   ],
+  "exactMatch": [
+    {
+      "id": "http://dbpedia.org/resource/Microbiome"
+    }
+  ],
   "inScheme": [
     {
       "id": "https://jhercher.github.io/skohub-pages/zw/scheme"

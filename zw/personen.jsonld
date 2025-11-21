@@ -10,6 +10,12 @@
   },
   "narrower": [
     {
+      "id": "https://jhercher.github.io/skohub-pages/zw/xiaoxi-wei",
+      "prefLabel": {
+        "de": "Xiaoxi Wei"
+      }
+    },
+    {
       "id": "https://jhercher.github.io/skohub-pages/zw/sven-janszky",
       "prefLabel": {
         "de": "Sven Gabor Janszky"
@@ -79,6 +85,41 @@
       "id": "https://jhercher.github.io/skohub-pages/zw/boris-thomas",
       "prefLabel": {
         "de": "Boris Thomas"
+      }
+    },
+    {
+      "id": "https://jhercher.github.io/skohub-pages/zw/eric-brown",
+      "prefLabel": {
+        "de": "Eric Brown",
+        "en": "Eric Brown"
+      }
+    },
+    {
+      "id": "https://jhercher.github.io/skohub-pages/zw/david-yang",
+      "prefLabel": {
+        "de": "David Yang",
+        "en": "David Yang"
+      }
+    },
+    {
+      "id": "https://jhercher.github.io/skohub-pages/zw/winfried-hensinger",
+      "prefLabel": {
+        "de": "Winfried Hensinger",
+        "en": "Winfried Hensinger"
+      }
+    },
+    {
+      "id": "https://jhercher.github.io/skohub-pages/zw/eve-anderson",
+      "prefLabel": {
+        "de": "Eve Anderson",
+        "en": "Eve Anderson"
+      }
+    },
+    {
+      "id": "https://jhercher.github.io/skohub-pages/zw/simon-kos",
+      "prefLabel": {
+        "de": "Simon Kos",
+        "en": "Simon Kos"
       }
     }
   ],

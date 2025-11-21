@@ -27,6 +27,21 @@
       "en": "Investment"
     }
   },
+  "related": [
+    {
+      "id": "https://jhercher.github.io/skohub-pages/zw/xiaoxi-wei",
+      "prefLabel": {
+        "de": "Xiaoxi Wei"
+      }
+    },
+    {
+      "id": "https://jhercher.github.io/skohub-pages/zw/universal-quantum",
+      "prefLabel": {
+        "de": "Universal Quantum",
+        "en": "Universal Quantum"
+      }
+    }
+  ],
   "inScheme": [
     {
       "id": "https://jhercher.github.io/skohub-pages/zw/scheme"

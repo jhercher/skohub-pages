@@ -35,6 +35,11 @@
       }
     }
   ],
+  "exactMatch": [
+    {
+      "id": "http://dbpedia.org/resource/Telomere"
+    }
+  ],
   "inScheme": [
     {
       "id": "https://jhercher.github.io/skohub-pages/zw/scheme"

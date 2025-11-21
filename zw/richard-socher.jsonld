@@ -9,12 +9,10 @@
       "Dr. Richard Socher"
     ]
   },
-  "definition": {
-    "de": "KI-Experte und Ehrendoktor, Silicon Valley"
-  },
   "scopeNote": {
     "de": [
-      "Lebt auf Ranch im Silicon Valley"
+      "Lebt auf Ranch im Silicon Valley",
+      "Lebt auf Ranch im Silicon Valley, Stanford PhD"
     ]
   },
   "broader": {
@@ -24,6 +22,26 @@
       "en": "People"
     }
   },
+  "related": [
+    {
+      "id": "https://jhercher.github.io/skohub-pages/zw/ki-molekularbiologie",
+      "prefLabel": {
+        "de": "KI in der Molekularbiologie"
+      }
+    },
+    {
+      "id": "https://jhercher.github.io/skohub-pages/zw/youcom",
+      "prefLabel": {
+        "de": "you.com",
+        "en": "you.com"
+      }
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "http://dbpedia.org/resource/Richard_Socher"
+    }
+  ],
   "inScheme": [
     {
       "id": "https://jhercher.github.io/skohub-pages/zw/scheme"

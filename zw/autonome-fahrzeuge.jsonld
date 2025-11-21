@@ -53,6 +53,11 @@
       }
     }
   ],
+  "exactMatch": [
+    {
+      "id": "http://dbpedia.org/resource/Self-driving_car"
+    }
+  ],
   "inScheme": [
     {
       "id": "https://jhercher.github.io/skohub-pages/zw/scheme"

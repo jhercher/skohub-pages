@@ -22,6 +22,11 @@
       }
     }
   ],
+  "exactMatch": [
+    {
+      "id": "http://dbpedia.org/resource/Silicon_Valley"
+    }
+  ],
   "inScheme": [
     {
       "id": "https://jhercher.github.io/skohub-pages/zw/scheme"

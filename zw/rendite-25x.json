@@ -16,6 +16,15 @@
       "de": "Rendite-Beispiele"
     }
   },
+  "related": [
+    {
+      "id": "https://jhercher.github.io/skohub-pages/zw/organtechnologie",
+      "prefLabel": {
+        "de": "Organtechnologie",
+        "en": "Organ Technology"
+      }
+    }
+  ],
   "inScheme": [
     {
       "id": "https://jhercher.github.io/skohub-pages/zw/scheme"

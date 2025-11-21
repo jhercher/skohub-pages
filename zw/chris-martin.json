@@ -8,7 +8,7 @@
     "de": "Leadsänger von Coldplay"
   },
   "example": {
-    "de": "'In vier Jahren kennt uns die ganze Welt' (1998)"
+    "de": "'In vier Jahren kennt uns die ganze Welt' (1998). Beispiel von Self-Fulfiling Prophecy (Merton)"
   },
   "broader": {
     "id": "https://jhercher.github.io/skohub-pages/zw/personen",
@@ -24,6 +24,11 @@
         "de": "Backcasting",
         "en": "Backcasting"
       }
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "http://dbpedia.org/resource/Chris_Martin"
     }
   ],
   "inScheme": [

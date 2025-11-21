@@ -41,6 +41,12 @@
         "de": "Kryokonservierung",
         "en": "Cryopreservation"
       }
+    },
+    {
+      "id": "https://jhercher.github.io/skohub-pages/zw/rendite-25x",
+      "prefLabel": {
+        "de": "25x Rendite"
+      }
     }
   ],
   "inScheme": [

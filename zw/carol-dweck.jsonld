@@ -10,7 +10,7 @@
     ]
   },
   "definition": {
-    "de": "Psychologin an Stanford University, Forschung zu Mindsets"
+    "de": "Psychologin an Stanford University, Forschung zu Mindsets. Menschen mit 'Growth Mindset glauben daran dass sie ihre Intelligenz verbessern können, und dass wenn sie es nicht tun sie sich verschlechtert.'(Janszky min. "
   },
   "broader": {
     "id": "https://jhercher.github.io/skohub-pages/zw/personen",
@@ -40,6 +40,11 @@
         "de": "Growth Mindset",
         "en": "Growth Mindset"
       }
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "http://dbpedia.org/resource/Carol_Dweck"
     }
   ],
   "inScheme": [

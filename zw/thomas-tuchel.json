@@ -9,7 +9,7 @@
   },
   "scopeNote": {
     "de": [
-      "Ehemals Mainz 05, Dortmund, entwickelte Diamant-Trainingsplatz"
+      "Ehemals Mainz 05, Dortmund, entwickelte Diamant-Trainingsplatz zur Veränderung unterbewusster Denkmuster der Spieler immer an der Linie entlang zu spielen; hin zu parallel spielen"
     ]
   },
   "broader": {
@@ -31,6 +31,11 @@
       "prefLabel": {
         "de": "Denkmuster brechen"
       }
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "http://dbpedia.org/resource/Thomas_Tuchel"
     }
   ],
   "inScheme": [

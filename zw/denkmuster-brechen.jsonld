@@ -12,13 +12,15 @@
   "definition": {
     "de": "Methode zur Veränderung unterbewusster Verhaltensmuster"
   },
+  "note": {
+    "de": [
+      "Diamant-Trainingsplatz von Thomas Tuchel"
+    ]
+  },
   "scopeNote": {
     "de": [
       "90-110 Tage für neues Denkmuster, altes Muster unmöglich machen"
     ]
-  },
-  "example": {
-    "de": "Diamant-Trainingsplatz von Thomas Tuchel"
   },
   "broader": {
     "id": "https://jhercher.github.io/skohub-pages/zw/weg-erreichen",

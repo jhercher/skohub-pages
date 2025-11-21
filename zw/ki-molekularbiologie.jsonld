@@ -24,6 +24,14 @@
       "en": "Artificial Intelligence"
     }
   },
+  "related": [
+    {
+      "id": "https://jhercher.github.io/skohub-pages/zw/richard-socher",
+      "prefLabel": {
+        "de": "Richard Socher"
+      }
+    }
+  ],
   "inScheme": [
     {
       "id": "https://jhercher.github.io/skohub-pages/zw/scheme"

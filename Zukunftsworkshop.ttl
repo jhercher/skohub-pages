@@ -1,0 +1,232 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix zw: <http://example.org/zukunftsworkshop/> .
+
+# Concept Scheme
+zw:scheme a skos:ConceptScheme ;
+    dc:title "Zukunftsworkshop Konzepte"@de ;
+    dc:creator "Sven Gabor Janszky" ;
+    dc:description "Thematisches Vokabular aus dem Zukunftsworkshop von 2b:ahead"@de ;
+    dcterms:created "2024-11-21"^^xsd:date ;
+    skos:hasTopConcept zw:methodik,
+                       zw:realitygap,
+                       zw:gesundheit,
+                       zw:ki,
+                       zw:investment,
+                       zw:mindset,
+                       zw:personen,
+                       zw:organisationen .
+
+# =============================================================================
+# TOP CONCEPT: METHODIK
+# =============================================================================
+
+zw:methodik a skos:Concept ;
+    skos:prefLabel "Zukunftsmethodik"@de, "Future Methodology"@en ;
+    skos:altLabel "Prognosemethodik"@de ;
+    skos:definition "Wissenschaftliche Methoden zur Zukunftsplanung und Prognose"@de ;
+    skos:inScheme zw:scheme ;
+    skos:topConceptOf zw:scheme ;
+    skos:narrower zw:backcasting,
+                  zw:forecasting,
+                  zw:tomorrowyourlife,
+                  zw:zwölf-schritte .
+
+zw:backcasting a skos:Concept ;
+    skos:prefLabel "Backcasting"@de, "Backcasting"@en ;
+    skos:definition "Planungsmethode, die von einem gewünschten Zukunftszustand ausgeht und rückwärts plant"@de ;
+    skos:broader zw:methodik ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Im Gegensatz zum Forecasting wird vom Zielbild aus zurück zur Gegenwart geplant"@de ;
+    skos:example "Chris Martin: 'In vier Jahren kennt uns die ganze Welt'"@de .
+
+zw:forecasting a skos:Concept ;
+    skos:prefLabel "Forecasting"@de, "Forecasting"@en ;
+    skos:altLabel "Vorwärtsplanung"@de ;
+    skos:definition "Traditionelle Planungsmethode von der Gegenwart in die Zukunft"@de ;
+    skos:broader zw:methodik ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:swot-analyse ;
+    skos:scopeNote "Führt oft zur Optimierung des Status Quo statt zu transformativem Wachstum"@de .
+
+zw:tomorrowyourlife a skos:Concept ;
+    skos:prefLabel "Tomorrow Your Life Methode"@de ;
+    skos:altLabel "TYL-Methode"@de ;
+    skos:definition "3-Phasen-Methode zur Entwicklung des bestmöglichen Zukunfts-Ichs"@de ;
+    skos:broader zw:methodik ;
+    skos:inScheme zw:scheme ;
+    skos:narrower zw:umfeld-erkennen,
+                  zw:zukunfts-ich,
+                  zw:weg-erreichen .
+
+zw:zwölf-schritte a skos:Concept ;
+    skos:prefLabel "12-Schritte-Methode"@de ;
+    skos:definition "Detaillierte Schrittfolge innerhalb der Tomorrow Your Life Methode"@de ;
+    skos:broader zw:tomorrowyourlife ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "4 Schritte pro Phase, insgesamt 12 Schritte"@de .
+
+zw:umfeld-erkennen a skos:Concept ;
+    skos:prefLabel "Umfeld erkennen"@de ;
+    skos:definition "Erste Phase: Analyse wie das Umfeld in 5 Jahren aussieht"@de ;
+    skos:broader zw:tomorrowyourlife ;
+    skos:inScheme zw:scheme .
+
+zw:zukunfts-ich a skos:Concept ;
+    skos:prefLabel "Zukunfts-Ich entwickeln"@de ;
+    skos:altLabel "Bestmögliches Zukunfts-Ich"@de ;
+    skos:definition "Zweite Phase: Entwicklung des eigenen optimalen Zukunftsbildes"@de ;
+    skos:broader zw:tomorrowyourlife ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:zehn-zukunfts-ichs .
+
+zw:weg-erreichen a skos:Concept ;
+    skos:prefLabel "Weg erreichen"@de ;
+    skos:definition "Dritte Phase: Planung und Umsetzung des Weges zum Zukunfts-Ich"@de ;
+    skos:broader zw:tomorrowyourlife ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:denkmuster-brechen .
+
+zw:zehn-zukunfts-ichs a skos:Concept ;
+    skos:prefLabel "10 Zukunfts-Ichs"@de ;
+    skos:definition "Methode zur Identifikation von 10 möglichen besseren Zukunftsversionen"@de ;
+    skos:broader zw:zukunfts-ich ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Alle 10 sind besser als der heutige Zustand, Ziel ist das Bestmögliche zu finden"@de ;
+    skos:example "Svens Beispiel mit 28: Professor-Ich, Afrika-Ich, Weltreise-Ich, Sportler-Ich, Unternehmer-Ich, Silicon-Valley-Ich"@de .
+
+zw:denkmuster-brechen a skos:Concept ;
+    skos:prefLabel "Denkmuster brechen"@de ;
+    skos:altLabel "Thomas-Tuchel-Methode"@de ;
+    skos:definition "Methode zur Veränderung unterbewusster Verhaltensmuster"@de ;
+    skos:broader zw:weg-erreichen ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "90-110 Tage für neues Denkmuster, altes Muster unmöglich machen"@de ;
+    skos:example "Diamant-Trainingsplatz von Thomas Tuchel"@de .
+
+zw:swot-analyse a skos:Concept ;
+    skos:prefLabel "SWOT-Analyse"@de ;
+    skos:altLabel "Stärken-Schwächen-Analyse"@de, "Plus-Minus-Liste"@de ;
+    skos:definition "Traditionelle Analysemethode der Gegenwart"@de ;
+    skos:broader zw:forecasting ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Führt zur Optimierung statt Transformation"@de .
+
+# =============================================================================
+# TOP CONCEPT: REALITY GAP
+# =============================================================================
+
+zw:realitygap a skos:Concept ;
+    skos:prefLabel "Reality Gap"@de, "Reality Gap"@en ;
+    skos:altLabel "Realitätslücke"@de ;
+    skos:definition "Die Lücke zwischen zwei verschiedenen Wahrnehmungen der Zukunft"@de ;
+    skos:inScheme zw:scheme ;
+    skos:topConceptOf zw:scheme ;
+    skos:narrower zw:blaue-linie,
+                  zw:rote-linie .
+
+zw:blaue-linie a skos:Concept ;
+    skos:prefLabel "Blaue Linie"@de ;
+    skos:altLabel "Loser-Linie"@de, "Pessimisten-Perspektive"@de ;
+    skos:definition "Perspektive der langsamen inkrementellen Verbesserung, geprägt von Krisenbewusstsein"@de ;
+    skos:broader zw:realitygap ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:fixed-mindset ;
+    skos:scopeNote "Typisch für deutsche/europäische öffentliche Meinung"@de ;
+    skos:example "'Wenn wir viel Glück haben, wird es vielleicht ein bisschen besser'"@de .
+
+zw:rote-linie a skos:Concept ;
+    skos:prefLabel "Rote Linie"@de ;
+    skos:altLabel "Wachstumslinie"@de, "Optimisten-Perspektive"@de ;
+    skos:definition "Perspektive exponentiellen Wachstums und technologischer Lösungen"@de ;
+    skos:broader zw:realitygap ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:growth-mindset ;
+    skos:scopeNote "Typisch für internationale Technologie-Elite"@de ;
+    skos:example "'Wir lösen die größten Menschheitsprobleme in 20 Jahren'"@de .
+
+# =============================================================================
+# TOP CONCEPT: MINDSET
+# =============================================================================
+
+zw:mindset a skos:Concept ;
+    skos:prefLabel "Mindset"@de, "Mindset"@en ;
+    skos:altLabel "Denkweise"@de, "Geisteshaltung"@de ;
+    skos:definition "Grundlegende Überzeugungen über Intelligenz und Entwicklungsfähigkeit"@de ;
+    skos:inScheme zw:scheme ;
+    skos:topConceptOf zw:scheme ;
+    skos:narrower zw:fixed-mindset,
+                  zw:growth-mindset .
+
+zw:fixed-mindset a skos:Concept ;
+    skos:prefLabel "Fixed Mindset"@de, "Fixed Mindset"@en ;
+    skos:altLabel "Statisches Mindset"@de ;
+    skos:definition "Überzeugung, dass Intelligenz angeboren und unveränderbar ist"@de ;
+    skos:broader zw:mindset ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:blaue-linie ;
+    skos:scopeNote "Führt zu Vermeidung von Herausforderungen und Stagnation"@de ;
+    dc:source "Carol Dweck, Stanford University" .
+
+zw:growth-mindset a skos:Concept ;
+    skos:prefLabel "Growth Mindset"@de, "Growth Mindset"@en ;
+    skos:altLabel "Wachstums-Mindset"@de, "Zukunftsmindset"@de ;
+    skos:definition "Überzeugung, dass 50% der Intelligenz während des Lebens entwickelbar ist"@de ;
+    skos:broader zw:mindset ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:rote-linie ;
+    skos:scopeNote "Führt zu Anstrengung, Lernen aus Fehlern und kontinuierlichem Wachstum"@de ;
+    dc:source "Carol Dweck, Stanford University" .
+
+zw:umfeld-gestalten a skos:Concept ;
+    skos:prefLabel "Umfeld gestalten"@de ;
+    skos:altLabel "70%-Regel"@de ;
+    skos:definition "Methode zur Entwicklung eines Growth Mindsets durch bewusste Umfeldgestaltung"@de ;
+    skos:broader zw:growth-mindset ;
+    skos:inScheme zw:scheme ;
+    skos:scopeNote "Mehr als 50% (empfohlen 70%) täglicher Informationen von Growth Mindsets beziehen"@de .
+
+# =============================================================================
+# TOP CONCEPT: GESUNDHEIT & LANGLEBIGKEIT
+# =============================================================================
+
+zw:gesundheit a skos:Concept ;
+    skos:prefLabel "Gesundheit und Langlebigkeit"@de, "Health and Longevity"@en ;
+    skos:definition "Technologische Entwicklungen zur Verlängerung und Verbesserung des menschlichen Lebens"@de ;
+    skos:inScheme zw:scheme ;
+    skos:topConceptOf zw:scheme ;
+    skos:narrower zw:genomanalyse,
+                  zw:mikrobiom,
+                  zw:gentherapie,
+                  zw:precision-medicine,
+                  zw:organtechnologie,
+                  zw:3d-food-printing .
+
+zw:genomanalyse a skos:Concept ;
+    skos:prefLabel "Genomanalyse"@de, "Genome Analysis"@en ;
+    skos:altLabel "Genetische Analyse"@de ;
+    skos:definition "Analyse des individuellen Genoms zur Vorhersage genetisch bedingter Krankheiten"@de ;
+    skos:broader zw:gesundheit ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:bgi ;
+    skos:scopeNote "Kosten gesunken von Milliarden auf ca. 100 USD, Dateigröße 6GB"@de ;
+    skos:example "8B 6GB 99 Formel: 8 Milliarden Menschen, 6 Gigabyte Daten, 99 Jahre Lebenserwartung"@de .
+
+zw:mikrobiom a skos:Concept ;
+    skos:prefLabel "Mikrobiom"@de, "Microbiome"@en ;
+    skos:altLabel "Darmbakterien"@de, "Bakterien-Mix"@de ;
+    skos:definition "Gesamtheit der Mikroorganismen im Darm, entscheidend für Gesundheit"@de ;
+    skos:broader zw:gesundheit ;
+    skos:inScheme zw:scheme ;
+    skos:related zw:intelligente-wcs, zw:3d-food-printing ;
+    skos:scopeNote "Individuelle Optimierung verhindert Ausbruch genetisch angelegter Krankheiten"@de .
+
+zw:intelligente-wcs a skos:Concept ;
+    skos:prefLabel "Intelligente WCs"@de, "Smart Toilets"@en ;
+    skos:definition "Toiletten mit QR-Code-Scan zur Analyse des Mikrobiom-Ist-Zustands"@de ;
+    skos:broader zw

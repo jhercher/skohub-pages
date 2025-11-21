@@ -5,13 +5,15 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix zw: <http://example.org/zukunftsworkshop/> .
+@prefix zw: <https://jhercher.github.io/skohub-pages/zw/> .
 
 # Concept Scheme
 zw:scheme a skos:ConceptScheme ;
     dc:title "Zukunftsworkshop Konzepte"@de ;
     dc:creator "Sven Gabor Janszky" ;
-    dc:description "Thematisches Vokabular aus dem Zukunftsworkshop von 2b:ahead"@de ;
+    dc:publisher "Johannes Hercher" ;
+    dc:relation "https://coaching.janszky.de/wittmann/" ;
+    dc:description "Thematisches Vokabular aus dem Zukunftsworkshop von 2b:ahead, automatisiert erstellt zu Testzwecken von Johannes Hercher"@de ;
     dcterms:created "2024-11-21"^^xsd:date ;
     skos:hasTopConcept zw:methodik,
                        zw:realitygap,

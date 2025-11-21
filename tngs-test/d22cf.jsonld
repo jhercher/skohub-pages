@@ -8,8 +8,8 @@
     {
       "id": "https://jhercher.github.io/skohub-pages/tngs-test/83b68",
       "prefLabel": {
-        "en": "Bed",
-        "de": "Bett"
+        "de": "Bett",
+        "en": "Bed"
       }
     },
     {
@@ -66,6 +66,10 @@
     },
     "description": {
       "@id": "dct:description",
+      "@container": "@language"
+    },
+    "license": {
+      "@id": "dct:license",
       "@container": "@language"
     },
     "issued": {

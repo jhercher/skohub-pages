@@ -2,8 +2,8 @@
   "id": "https://jhercher.github.io/skohub-pages/tngs-test/83b68",
   "type": "Concept",
   "prefLabel": {
-    "en": "Bed",
-    "de": "Bett"
+    "de": "Bett",
+    "en": "Bed"
   },
   "broader": {
     "id": "https://jhercher.github.io/skohub-pages/tngs-test/d22cf",
@@ -50,6 +50,10 @@
     },
     "description": {
       "@id": "dct:description",
+      "@container": "@language"
+    },
+    "license": {
+      "@id": "dct:license",
       "@container": "@language"
     },
     "issued": {

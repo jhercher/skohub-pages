@@ -2,15 +2,15 @@
   "id": "https://jhercher.github.io/skohub-pages/tngs-test/Wohnzimmer",
   "type": "Concept",
   "prefLabel": {
-    "en": "Living Room",
-    "de": "Wohnzimmer"
+    "de": "Wohnzimmer",
+    "en": "Living Room"
   },
   "narrower": [
     {
       "id": "https://jhercher.github.io/skohub-pages/tngs-test/38a36",
       "prefLabel": {
-        "en": "Couch",
-        "de": "Couch"
+        "de": "Couch",
+        "en": "Couch"
       }
     },
     {
@@ -67,6 +67,10 @@
     },
     "description": {
       "@id": "dct:description",
+      "@container": "@language"
+    },
+    "license": {
+      "@id": "dct:license",
       "@container": "@language"
     },
     "issued": {

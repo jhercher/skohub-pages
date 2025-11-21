@@ -14,8 +14,8 @@
     {
       "id": "https://jhercher.github.io/skohub-pages/tngs-test/48d65",
       "prefLabel": {
-        "en": "Ladder",
-        "de": "Leiter"
+        "de": "Leiter",
+        "en": "Ladder"
       }
     },
     {
@@ -72,6 +72,10 @@
     },
     "description": {
       "@id": "dct:description",
+      "@container": "@language"
+    },
+    "license": {
+      "@id": "dct:license",
       "@container": "@language"
     },
     "issued": {

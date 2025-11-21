@@ -2,8 +2,8 @@
   "id": "https://jhercher.github.io/skohub-pages/tngs-test/48d65",
   "type": "Concept",
   "prefLabel": {
-    "en": "Ladder",
-    "de": "Leiter"
+    "de": "Leiter",
+    "en": "Ladder"
   },
   "broader": {
     "id": "https://jhercher.github.io/skohub-pages/tngs-test/Basement",
@@ -50,6 +50,10 @@
     },
     "description": {
       "@id": "dct:description",
+      "@container": "@language"
+    },
+    "license": {
+      "@id": "dct:license",
       "@container": "@language"
     },
     "issued": {

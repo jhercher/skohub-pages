@@ -6,7 +6,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix zw: <https://jhercher.github.io/skohub-pages/zw/> .
-
+@prefix kgco: <https://w3id.org/kgcm/ontology/> .
 # Concept Scheme
 zw:scheme a skos:ConceptScheme ;
     dc:title "Zukunftsworkshop Konzepte"@de ;
@@ -733,6 +733,7 @@ zw:future-me-membership a skos:Concept ;
     skos:broader zw:organisationen ;
     skos:inScheme zw:scheme ;
     skos:scopeNote "99 EUR/Monat, 1 EUR erster Monat, 891 EUR Jahrespreis"@de ;
+    kgco:mentionedIn "https://coaching.janszky.de/wittmann/ (min. 1:37)" ;
     skos:narrower zw:live-future-talks,
                   zw:zukunfts-stammtisch,
                   zw:deep-dive-session,

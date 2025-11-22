@@ -734,6 +734,13 @@ zw:future-me-membership a skos:Concept ;
     skos:inScheme zw:scheme ;
     skos:scopeNote "99 EUR/Monat, 1 EUR erster Monat, 891 EUR Jahrespreis"@de ;
     kgco:mentionedIn "https://coaching.janszky.de/wittmann/ (min. 1:37)" ;
+    skos:note "test  note <a href='https://coaching.janszky.de'>https://coaching.janszky.de</a>";
+skos:changeNote "test changeNote <a href='https://coaching.janszky.de'>https://coaching.janszky.de</a>" ;
+skos:definition "test definition (note) <a href='https://coaching.janszky.de'>https://coaching.janszky.de</a>";
+skos:editorialNote "test editorialNote <a href='https://coaching.janszky.de'>https://coaching.janszky.de</a>";
+skos:example "test example note <a href='https://coaching.janszky.de'>https://coaching.janszky.de</a>";
+skos:historyNote "test history note <a href='https://coaching.janszky.de'>https://coaching.janszky.de</a>";
+skos:scopeNote "test scopeNote note <a href='https://coaching.janszky.de'>https://coaching.janszky.de</a>";
     skos:narrower zw:live-future-talks,
                   zw:zukunfts-stammtisch,
                   zw:deep-dive-session,
